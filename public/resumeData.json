@@ -1,0 +1,77 @@
+{
+    "main": {
+      "name": "Heena Rajpal ",
+      "occupation": "FreeLancer",
+      "description": "Full Stack Developer ",
+      "image": "heena.jpg",
+      "bio": "My name is Heena, I'm a Full Stack ReactJS Developer. ",
+      "contactmessage": "Get in touch with me to receive further details.",
+      "email": "heena.rajpal93@gmail.com",
+      "phone": "347-000-0000",
+      "address": {
+        "street": "Oak Village Blvd",
+        "city": "Lewis Center ",
+        "state": "OH",
+        "zip": "43035"
+      },
+    
+      "social": [
+      
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/nazariydumanskyy/",
+          "className": "fa fa-linkedin"
+        }
+      ]
+    },
+    "resume": {
+      "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+      "education": [
+        {
+          "school": "Rutgers University ",
+          "degree": "BootCamp In Coding ",
+          "graduated": "March 2021",
+          "description": "Graduating soon "
+        }
+      ],
+      "work": [
+        {
+          "company": "New York Department of Labor  ",
+          "title": "Help Desk Analyst",
+          "years": "May 2020 - Dec 2020",
+          "description": "Helping "
+        }
+      ],
+      "skills": [
+        {
+          "name": "ReactJs",
+          "level": "75%"
+        },
+        
+        {
+          "name": "Git",
+          "level": "75%"
+        },
+        {
+          "name": "JavaScript",
+          "level": "80%"
+        },
+        {
+          "name": "MongoDB",
+          "level": "80%"
+        }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+       
+        {
+          "title": "Herbizelle",
+          "category": "Herbizelle with MySql",
+          "image": "herbizzele.JPG",
+          "url": "https://protected-fjord-40168.herokuapp.com"
+        }
+      ]
+    }
+    
+  }
