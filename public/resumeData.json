@@ -47,7 +47,10 @@
           "name": "ReactJs",
           "level": "75%"
         },
-        
+        {
+            "name": "Heroku",
+            "level": "75%"
+          },
         {
           "name": "Git",
           "level": "75%"
