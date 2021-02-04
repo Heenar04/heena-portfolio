@@ -15,16 +15,73 @@
   </head>
 
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+   
     <div id="root"></div>
+    <div id='cy'></div>
 
+    <script>
+      var json = $.getJSON("data.json")
+      .done(function(data){
+        var cy = cytoscape({
+    
+          container: document.getElementById('cy'),
+    
+          elements: data.elements,
+    
+          style : [ {
+            "selector" : "node",
+            "css" : {
+              "text-valign" : "center",
+              "text-halign" : "center",
+              "font-family" : "SansSerif.plain",
+              "font-weight" : "normal",
+              "background-color" : "rgb(204,255,255)",
+              "border-width" : 1.5,
+              "height" : 35.0,
+              "width" : 75.0,
+              "border-opacity" : 1.0,
+              "color" : "rgb(0,0,0)",
+              "border-color" : "rgb(0,153,255)",
+              "text-opacity" : 1.0,
+              "background-opacity" : 1.0,
+              "font-size" : 12,
+              "shape" : "ellipse",
+              "content" : "data(src_node)"
+            }
+          }, {
+            "selector" : "node:selected",
+            "css" : {
+              "background-color" : "rgb(255,255,0)"
+            }
+          }, {
+            "selector" : "edge",
+            "css" : {
+              "color" : "rgb(0,0,0)",
+              "source-arrow-shape" : "none",
+              "font-family" : "Dialog.plain",
+              "font-weight" : "normal",
+              "target-arrow-color" : "rgb(0,0,0)",
+              "width" : 2.0,
+              "source-arrow-color" : "rgb(0,0,0)",
+              "line-color" : "rgb(132,132,132)",
+              'opacity': 0.5,
+              "line-style" : "solid",
+              "font-size" : 12,
+              "text-opacity" : 1.0,
+              "target-arrow-shape" : "triangle",
+              "content" : "data(pathway)",
+              'curve-style': 'bezier'
+            }
+          } ],
+        });
+      });
 
-
+</script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.9.0/cytoscape.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
 
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import './Contact.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Contact = ({ data }) => {
    // const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
    const [name, setName] = useState('');
@@ -28,7 +29,7 @@ const Contact = ({ data }) => {
 
             <div className="ten columns">
 
-                  <p className="lead">{data?.message}</p>
+                  <p className="lead">{data?.message} </p>
 
             </div>
 
